@@ -36,7 +36,7 @@ let renderingAño = (pelisData) => {
 
 
 export let getPelisAPI = (pelisParaBuscar) => {
-fetch("https://www.omdbapi.com/?t= '' + '' " + `${pelisParaBuscar}` + "&apikey=dc09d5bb")
+fetch("https://www.omdbapi.com/?t=" + `${pelisParaBuscar}` + "&apikey=dc09d5bb")
  .then((response)=> {
     console.log(response)
     if(response.status == 404) {
@@ -54,8 +54,8 @@ fetch("https://www.omdbapi.com/?t= '' + '' " + `${pelisParaBuscar}` + "&apikey=d
 }
 
 
-export let getPelisAPIYear = (pelisPorAño) => {
-    fetch("https://www.omdbapi.com/?y= '' + '' " + `${pelisPorAño}` + "&apikey=dc09d5bb")
+export let getPelisAPIYear = (peli, año) => {
+    fetch("https://www.omdbapi.com/?t=" + `${peli}` + "&y=" + `${año}` + "&apikey=dc09d5bb")
      .then((response)=> {
         console.log(response)
         if(response.status == 404) {
