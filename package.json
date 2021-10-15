@@ -1,0 +1,22 @@
+{
+  "name": "mexflix",
+  "version": "1.0.0",
+  "description": "Catálogo de peliculas",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaz0King/Mexflix.git"
+  },
+  "keywords": [
+    "mexflix"
+  ],
+  "author": "Jaziel Ramírez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaz0King/Mexflix/issues"
+  },
+  "homepage": "https://github.com/Jaz0King/Mexflix#readme"
+}
