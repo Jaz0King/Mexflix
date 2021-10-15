@@ -48,8 +48,7 @@ fetch("http://www.omdbapi.com/?t= '' + '' " + `${pelisParaBuscar}` + "&apikey=dc
    }
   }) 
 
- .then((data)=> renderingPelis(data)) 
- .catch((error)=> console.log(error))
+ 
  .finally(()=> console.log("promesas resueltas"));
 
 }
@@ -68,8 +67,7 @@ export let getPelisAPIYear = (pelisPorAño) => {
        }
       }) 
     
-     .then((data)=> renderingAño(data)) 
-     .catch((error)=> console.log(error))
+     
      .finally(()=> console.log("promesas resueltas"));
     
     }
