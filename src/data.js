@@ -1,3 +1,6 @@
+
+
+
 let pelisModal = document.getElementById("modalSection")
 //Función del boton ver, que hará la búsqueda por"Title" para poder arojar más datos de la peli buscada.
 let verMas = (peliID) => {
@@ -162,7 +165,7 @@ for (const item of peliSelection2) {
 
 //Rendering pelis Surrealista
 let renderingPeliSelection2 = (data) => {
-    let peliSelectionSection = document.getElementById("pelis-filosofía")
+    let peliSelectionSection = document.getElementById("pelis-surrealista")
     peliSelectionSection.innerHTML += '<div class="card" style="width: 22rem;">'   
     + '<img src=' + `${data.Poster}` + ' class="pelis-card img-fluid rounded mx-auto" alt=' + `${data.Tile}` + '/>'
     + '<div class="card-body">'
@@ -185,8 +188,32 @@ for (const item of peliSelection3) {
 
 //Rendering pelis Surrealista
 let renderingPeliSelection3 = (data) => {
-    let peliSelectionSection3 = document.getElementById("pelis-filosofía")
+    let peliSelectionSection3 = document.getElementById("pelis-documental")
     peliSelectionSection3.innerHTML += '<div class="card" style="width: 22rem;">'   
+    + '<img src=' + `${data.Poster}` + ' class="pelis-card img-fluid rounded mx-auto" alt=' + `${data.Tile}` + '/>'
+    + '<div class="card-body">'
+    + '<h1 class="card-title">' + `${data.Title}` + '</h1>'
+    + '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=#' + `${data.imdbID}`+ '> Ver más </button>'
+    + '</div>'
+    + '</div>' 
+    //print modal inside for
+    renderingSelectionModal(data)
+}
+
+
+//Arreglo pelis recomendadas "Sección de Surrealista"
+let peliSelection4 = ["humano","blueberry","branded", "granicero", "donnie darko", "pink floyd", "fight club", "el topo", "La planéte sauvage", "chihiro"]
+for (const item of peliSelection4) {
+  fetch("https://www.omdbapi.com/?t=" + item + "&apikey=dc09d5bb")
+  .then((response) => response.json())
+  .then((data) => renderingPeliSelection4(data))
+  .catch((error) => console.log(error))
+}
+
+//Rendering pelis Surrealista
+let renderingPeliSelection4 = (data) => {
+    let peliSelectionSection4 = document.getElementById("pelis-animación")
+    peliSelectionSection4.innerHTML += '<div class="card" style="width: 22rem;">'   
     + '<img src=' + `${data.Poster}` + ' class="pelis-card img-fluid rounded mx-auto" alt=' + `${data.Tile}` + '/>'
     + '<div class="card-body">'
     + '<h1 class="card-title">' + `${data.Title}` + '</h1>'

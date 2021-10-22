@@ -1,14 +1,22 @@
-body {
-    background-color: rgb(35, 243, 28);
 
-}
+
 
 .card {
-    background-color: black;
+    
     background-clip: border-box;
     border: 1px solid rgb(253, 252, 252);
     border-radius: .25rem;
 }
+
+.rounded {
+    border-radius: 1rem!important;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+
 
 #busqueda {
     display:flex;
@@ -18,8 +26,20 @@ body {
     column-gap: 2em;
     justify-content: center;
     margin: 3em;
+    padding: 2em;
 }
 
+#searchInput {
+    border-radius: .5em;
+    
+}
+
+#searchButton {
+    background-color: black;
+    border-radius: .5em;
+    color:rgb(253, 252, 252);
+    font-size: large;
+}
 
 
 .container-selection,.container-search {
@@ -29,5 +49,11 @@ body {
     row-gap: 1em;
     column-gap: 1em;
     justify-content: center;
+    margin: 1em;
+    
+}
+
+.container-md {
+    padding: 0px 30px;
 }
 
