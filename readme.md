@@ -14,7 +14,7 @@
 ---
 ## 1. Descripción 
 
-Se nececita una aplicación que muestre al usuario una lista de películas sugeridas para un público esecífico, iteresado en el tema, de las películas.
+Se nececita una aplicación que muestre al usuario una lista de películas sugeridas para un público esecífico, iteresado en el tema, de las películas filosóficas, surrealistas o el cine documental.
 
 ---
 ## 2. Tipo de Cliente 
