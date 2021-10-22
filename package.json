@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Jaz0King/Mexflix/issues"
   },
-  "homepage": "https://github.com/Jaz0King/Mexflix#readme"
+  "homepage": "https://github.com/Jaz0King/Mexflix#readme",
+  "devDependencies": {
+    "eslint": "^8.0.1"
+  }
 }

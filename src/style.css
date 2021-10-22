@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(35, 243, 28);
+
+}
+
+.card {
+    background-color: black;
+    background-clip: border-box;
+    border: 1px solid rgb(253, 252, 252);
+    border-radius: .25rem;
+}
+
+#busqueda {
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    row-gap: 1em;
+    column-gap: 2em;
+    justify-content: center;
+    margin: 3em;
+}
+
+
+
+.container-selection,.container-search {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    row-gap: 1em;
+    column-gap: 1em;
+    justify-content: center;
+}
+
